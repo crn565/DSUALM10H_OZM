@@ -48,9 +48,6 @@ Los aplicativos  usados en el experimento son los siguintes:
 11 -  Freezer (congelador)
 
 
-## Eficiencia  computacional
-
-
 
 ## RESULTADOS FINALES
 La rápida expansión de NILM y el desarrollo de diferentes algoritmos, han hecho que sea esencial proporcionar una evaluación de rendimiento mediante el uso de métricas de desempeño. Las métricas de evaluación, comparan los resultados de la desagregaciónn (predicciones) de los modelos entrenados con los datos del set de validación (mediciones reales de cada proceso). NILMTK cuenta con el cálculo de métricas de evaluación mediante el uso del MeterGroup para la validación de los resultados mediante el set de validación entes y lo mas variadas posibles . 
