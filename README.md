@@ -3,9 +3,12 @@ Medidas tomadas el 16 de junio de 2023
 
 Comenzaron el dia 2023-06-09 a las 09:34:38+02:00 y terminaron el dia 2023-06-09  a las 13:36:19+02:00 en el Laboratorio de Electrotecnia de la  Escuela de Ingenieria Industrial de la Universidad de Almeria.
 
-En este respositorio se analizaran medidas con 3 ozm  trifasicos conformando en total  10 aplicativos  mas el agregado, todo estos durante 4 horas. Este repositorio por tanto se apoya en el repositorio https://github.com/crn565/ozm10_appliances_transitorios
+En este respositorio se analizaran medidas con 3 ozm  trifasicos conformando en total  10 aplicativos  mas el agregado, todo estos durante 4 horas. 
 
-En efecto, se realiza  en los cuadernos adjuntos a este repositorio el analisis de las medidas de 10 aplicativos incluyendo transitorios  hasta el orden 150 de tension, corriente y potencia. Las Medidas  se realizan con 3  OpenZMeter  Trifásicos  (cada uno con 4 canales de medida)  conformando asi en total  11 canales de medida  que se distribuyen en los 10 aplicativos, mas el agregado. Las medidas corresponden a W, VAR, VA,f, VLN,PF y A, mas los transititoros  hasta el orden 150 de W, V y A,   todas con un marca de tiempo (Timestamp) de 13 dígitos tipo UNIX Epox.
+En efecto, se realiza  en los cuadernos adjuntos a este repositorio el analisis de las medidas de 10 aplicativos incluyendo transitorios  hasta el orden 150 de tension, corriente y potencia. Las Medidas  se realizan con 3  OpenZMeter  Trifásicos  (cada uno con 4 canales de medida)  conformando asi en total  11 canales de medida  que se distribuyen en los 10 aplicativos, mas el agregado.
+
+
+Las medidas corresponden a W, VAR, VA,f, VLN,PF y A, mas los transititoros  hasta el orden 150 de W, V y A,   todas con un marca de tiempo (Timestamp) de 13 dígitos tipo UNIX Epox.
 
 
   
@@ -14,10 +17,9 @@ Para el  entrenamiento se  han definido tres periodos:
 
  - TRAIN(start="2023-06-09 09:34:00", end="2023-06-09 12:54:00")
 
-
  - VAL:(start="2023-06-09 12:55:00", end="2023-06-09 13:36:00")
  
- - TEST: (start="2023-06-09 12:55:00", end="2023-06-09 13:36:00")
+ - TEST: (start="2023-06-06 11:19:19", end="2023-06-06 11:40:28")
  
 
 Estos datos se entrenaron, tanto con el algoritmo CO, como el algoritmo FHMM.
