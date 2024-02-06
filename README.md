@@ -52,9 +52,13 @@ La siguiente tarea de carga y análisis de los datos, consiste principalmente en
 
 Normalmente, NILMTK utiliza formatos estandarizados de DS, pero debido a la exclusividad de los datos proporcionados por OZM, se necesita un nuevo conversor para los datos. Para esto, se han creado un nuevo convertidor, así como una nueva función *convert_ualm* para cargar los ficheros de medidas en formato csv de los OZM al nuevo DS en formato H5. Para ello en el directorio de NILMTK de los convertidores, no solo se incluirá el nuevo código Python del convertidor (basado en el convertidor IAWE), sino que también se creará un subdirectorio en "/metadata/" que contendrán los archivos de metadatos en formato YAML. La Figura 4 muestra la configuración de todos los archivos necesarios para el nuevo convertidor, así como la estructura de directorios requerida.
 
+![](media/f0fc612321c8838d7279158e7cde4234.png)
+
 Figure 4-Metadata file structure
 
 Como cada fichero csv es obtenido en la fase de anterior a partir de los ficheros de los OZM, es necesario numerarlos, siendo el nº 1 el correspondiente al medidor principal. Para ello, la nueva función accede a todos los citados ficheros de datos de medidas localizados en la carpeta de entrada “/electricity/”, usando para ello el fichero de etiquetas labels.csv, proceso que representamos en la Ilustración 5.
+
+![](media/6ae09e667f0eab524fc770ce3f816fba.png)
 
 Figure 5-Data file structure
 
@@ -242,3 +246,14 @@ Figure 16- Comparison GT with Pred for DEPS
 En este trabajo en el ámbito de NILMTK, además de incorporar tanto las métricas como las herramientas disponibles en el toolkit, se ha incorporado como novedad, el nuevo formato de timestamp de 13 dígitos además de nuevos conversores y convertidores para las medidas obtenidas de OZM, de modo que así se elimina la barrera de entrada a todo aquel investigador que cuente con uno o varios OZM y desee acceder al NILM. Precisamente comparando los DS obtenidos (con o sin transitorios), se ha demostrado que el uso de armónicos puede mejorar el resultado de las métricas, dependiendo, eso sí, del aplicativo a considerar.
 
 Por otro lado, si comparamos los resultados de las métricas obtenidas sobre DSUALM o DSUALMT, frente a los DS de IAWE o DEPS los resultados son mucho peores en estos últimos, especialmente en cuanto al periodo de muestreo necesario. Destaca además el error mínimo en la desagregación en DSUALM, así como los mejores valores obtenidos para las métricas MNEAP y RMSE.
+
+**Publicaciones**
+
+Hay un artículo de mi autoría sobre el NILM que usa el hardware OZM monofásico en lugar del OZM v2:
+
+-   C. Rodriguez-Navarro, A. Alcayde, V. Isanbaev, L. Castro-Santos, A. Filgueira-Vizoso, and F. G. Montoya, “DSUALMH- A new high-resolution dataset for NILM,” *Renewable Energy and Power Quality Journal*, vol. 21, no. 1, pp. 238–243, Jul. 2023, doi: 10.24084/repqj21.286.
+
+Asimismo, con el fin de hacer replicable todo este trabajo se ha desarrollado un nuevo multi contador abierto llamado OMPM esta publicada en la revista científica “Inventions:”
+
+-   C. Rodríguez-Navarro, F. Portillo, F. Martínez, F. Manzano-Agugliaro, and A. Alcayde, “Development and Application of an Open Power Meter Suitable for NILM,” *Inventions*, vol. 9, no. 1, p. 2, Dec. 2023, doi: 10.3390/inventions9010002.
+
