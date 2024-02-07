@@ -1,7 +1,16 @@
 # Medidas de 10 Aplicativos con OZM V2  con armónicos
 
+En este respositorio se presenta en los cuadernos adjuntos,  el análisis de las medidas de 10 aplicativos incluyendo transitorios hasta el orden 150 de tensión, corriente y potencia. Las Medidas se realizan con 3 OpenZmeter Trifásicos (cada uno con 4 canales de medida) conformando así en total 11 canales de medida que se distribuyen en los 10 aplicativos, más el agregado. Las medidas corresponden a W, VAR, VA, f, VLN, PF y A, más los armónicos hasta el orden 50 de W, V y A, todas con una marca de tiempo (Timestamp) de 13 dígitos tipo UNIX Epox.
+La generación del Dataset se hizo con el nuevo convertidor/conversor diseñado para esta ocasión, partiendo de 11 ficheros csv de medidas que resultaron de unir cada fichero csv de cada aplicativo de cada día con el csv de ese mismo aplicativo y ese mismo día.
+
+**\*\*DEBIDO A SU GRAN TAMAÑO , POR SU EXTENSION, NO ESTAN DISPONIBLES LOS FICHEROS DE DATOS EN FORMATO CSV EN ESTE REPOSITORIO, PERO SI ESTA DISPONIBLE EN ESTE REPOSITORIO DSUALM10H EL DATASET COMPLETO  DE FOPRMA COMPRIMIDA EN FORMATO RAR CON TODOS LOS ARMONICOS CON EL TIEMPO HABITUAL DE MUESTRAS. \*\***
+
+Estos datos se entrenaron, tanto con el algoritmo combinatorio (CO), como el algoritmo de Markov Oculto (FHMM), pero el algoritmo que mejores resultados devolvió es CO, dado que con FHMM ha sido imposible ejecutarlo con tiempos de sampling inferiores a 90segundos por falta de memoria física (incluso devolvió errores usando maquinas con más de 64GB de RAM).
 
 Nuestro objetivo es proporcionar a los investigadores de NILM nuevos repositorios de datos para ampliar el abanico existente. Dado que estos nuevos conjuntos de datos pueden contener más de 150 variables eléctricas registradas a alta frecuencia en diferentes aplicaciones de uso cotidiano, al ofrecer esta amplia gama de datos, esperamos impulsar y mejorar las investigaciones en el campo del NILM.
+
+A continuación, se expone de forma genérica las conclusiones principales de tomar solo los armónicos impares, despreciando todos los armónicos, tomando todos ellos (pares e impares), o ampliando el tiempo de muestra
+
 
 **ARQUITECTURA**
 
