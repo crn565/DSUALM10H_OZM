@@ -1,6 +1,6 @@
 Nuestro objetivo es proporcionar a los investigadores de NILM nuevos repositorios de datos para ampliar el abanico existente. Dado que estos nuevos conjuntos de datos pueden contener más de 150 variables eléctricas registradas a alta frecuencia en diferentes aplicaciones de uso cotidiano, al ofrecer esta amplia gama de datos, esperamos impulsar y mejorar las investigaciones en el campo del NILM.
 
-**3. ARQUITECTURA**
+**ARQUITECTURA**
 
 Para el proceso de desagregación con los medidores inteligentes OZM usaremos el Toolkit NILMTK, cuyo flujo podemos ver en la ilustración siguiente.
 
