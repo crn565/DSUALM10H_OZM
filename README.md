@@ -6,7 +6,7 @@ Las medidas corresponden a W, VAR, VA, f, VLN, PF y A, más los armónicos hasta
 
 La generación del Dataset se hizo con el nuevo convertidor/conversor diseñado para esta ocasión, partiendo de 11 ficheros csv de medidas que resultaron de unir cada fichero csv de cada aplicativo de cada día con el csv de ese mismo aplicativo y ese mismo día.
 
-**\*\*DEBIDO A SU GRAN TAMAÑO, POR SU EXTENSION, NO ESTAN DISPONIBLES LOS FICHEROS DE DATOS EN FORMATO CSV EN ESTE REPOSITORIO, PERO SI ESTA DISPONIBLE EN ESTE REPOSITORIO DSUALM10H EL DATASET COMPLETO DE FOPRMA COMPRIMIDA EN FORMATO RAR CON TODOS LOS ARMONICOS CON EL TIEMPO HABITUAL DE MUESTRAS. \*\***
+**\*\*DEBIDO A SU GRAN TAMAÑO, POR SU EXTENSION, NO ESTAN DISPONIBLES LOS FICHEROS DE DATOS EN FORMATO CSV EN ESTE REPOSITORIO, PERO SI ESTA DISPONIBLE EN ESTE REPOSITORIO DSUALM10H EL DATASET COMPLETO DE FORMA COMPRIMIDA EN FORMATO RAR CON TODOS LOS ARMONICOS CON EL TIEMPO HABITUAL DE MUESTRAS. \*\***
 
 Estos datos se entrenaron, tanto con el algoritmo combinatorio (CO), como el algoritmo de Markov Oculto (FHMM), pero el algoritmo que mejores resultados devolvió es CO, dado que con FHMM ha sido imposible ejecutarlo con tiempos de sampling inferiores a 90segundos por falta de memoria física (incluso devolvió errores usando maquinas con más de 64GB de RAM).
 
