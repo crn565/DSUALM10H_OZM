@@ -1,6 +1,6 @@
 # Medidas de 10 Aplicativos con OZM V2 con armónicos
 
-En este repositorio se presenta en los cuadernos adjuntos, el análisis de las medidas de 10 aplicativos incluyendo armónicos hasta el orden 150 de tensión, corriente y potencia. Las Medidas se realizan con 3 OpenZmeter Trifásicos (cada uno con 4 canales de medida) conformando así en total 11 canales de medida que se distribuyen en los 10 aplicativos, más el agregado.
+En este repositorio se presenta en los cuadernos adjuntos, el análisis de las medidas de 10 aplicativos incluyendo armónicos hasta el orden 150 de tensión, corriente y potencia. Las Medidas se realizan con 3 OpenZmeter Trifásicos (cada uno con 4 canales de medida) conformando así en total un conjunto de  11 canales de medida que se distribuyen en los 10 aplicativos, más el agregado que recopila el acumulado de todos éstos.
 
 Las medidas corresponden a W, VAR, VA, f, VLN, PF y A, más los armónicos hasta el orden 50 de W, V y A, todas con una marca de tiempo (Timestamp) de 13 dígitos tipo UNIX Epox.
 
