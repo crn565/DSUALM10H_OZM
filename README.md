@@ -1,4 +1,6 @@
+#
 # Measurements of 10 Applicatives with OZM V2 with harmonics
+#
 
 In this repository, the analysis of the measurements of 10 applications including harmonics up to order 150 of voltage, current and power is presented in the attached notebooks. The measurements are carried out with 3 three-phase OpenZmeters (each with 4 measurement channels), making a total of 11 measurement channels distributed among the 10 applications, plus the aggregate that compiles the accumulated measurements of all of them.
 
@@ -36,11 +38,11 @@ Figure 3 - Schematic diagram of OZM's connections with the applications.
 
 The applications used in the experiment are the following:
 
-1 -Main
+1 - Main
 
 2 - Electric Furnace 
 
-3- Microwave 
+3 - Microwave 
 
 4 - Television
 
@@ -48,7 +50,7 @@ The applications used in the experiment are the following:
 
 6 - Vacuum Cleaner 
 
-7- Electric Space Heater 
+7 - Electric Space Heater 
 
 8 - Electric Shower Heater 
 
